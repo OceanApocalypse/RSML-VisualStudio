@@ -1,27 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="RSML.VisualStudio.1C4F7889-FA65-44B0-9203-6ACC4C1E62D6" Version="1.0.0" Language="en-US" Publisher="OceanApocalypseStudios" />
-    <DisplayName>RSML Support for Visual Studio</DisplayName>
-    <Description>This extension adds RSML support for Visual Studio.</Description>
-    <License>LICENSE.txt</License>
-    <Preview>true</Preview>
-    <Icon>logo.png</Icon>
-    <Tags>rsml;ocean-apocalypse-studios;rsea;red-sea-markup-language;markup;syntax;highlight;syntax-highlighting</Tags>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14, )">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" d:Source="Manual" />
-  </Dependencies>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" DisplayName="Visual Studio core editor" Version="[17.14, )" />
-  </Prerequisites>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" d:Source="Project" d:ProjectName="%CurrentProject%" />
-    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="|%CurrentProject%|" d:Source="Project" d:ProjectName="%CurrentProject%" />
-  </Assets>
+	<Metadata>
+		<Identity Id="RSML.VisualStudio.1C4F7889-FA65-44B0-9203-6ACC4C1E62D6" Version="0.0.1" Language="en-US" Publisher="OceanApocalypseStudios" />
+		<DisplayName>RSML Support for Visual Studio</DisplayName>
+		<Description>RSML Support for Visual Studio is a free and open-source Visual Studio extension that adds several features to Microsoft's IDE that allow developers using RSML to take it to another level. Red Sea Markup Language is a language designed to dynamically interpret different logic paths based on an host's OS and CPU architecture. Currently available in C# and C, but coming soon to many other languages.</Description>
+		<MoreInfo>https://oceanapocalypsestudios.org/rsml-docs/</MoreInfo>
+		<License>LICENSE.txt</License>
+		<Preview>true</Preview>
+		<Icon>Resources\Icon.png</Icon>
+		<PreviewImage>Resources\Icon.png</PreviewImage>
+		<Tags>rsml,rsea,red-sea-markup-language,markup,syntax,highlight,syntax-highlighting,evaluate,language,</Tags>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14, )">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14, )">
+			<ProductArchitecture>arm64</ProductArchitecture>
+		</InstallationTarget>
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" d:Source="Manual" />
+	</Dependencies>
+	<Prerequisites>
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" DisplayName="Visual Studio core editor" Version="[17.14, )" />
+	</Prerequisites>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.VsPackage" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" d:Source="Project" d:ProjectName="%CurrentProject%" />
+		<Asset Type="Microsoft.VisualStudio.MefComponent" Path="|%CurrentProject%|" d:Source="Project" d:ProjectName="%CurrentProject%" />
+	</Assets>
 </PackageManifest>

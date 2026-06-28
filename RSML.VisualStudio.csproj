@@ -14,16 +14,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="Grammars\rsml-language-configuration.tmLanguage.json" />
-	  <None Remove="languages.pkgdef" />
-	  <None Remove="LICENSE.txt" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Content Include="Grammars\rsml-language-configuration.tmLanguage.json" />
 	  <Content Include="languages.pkgdef" />
 	  <Content Include="LICENSE.txt">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <IncludeInVSIX>True</IncludeInVSIX>
+	  </Content>
+	  <Content Include="Resources\Icon.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <IncludeInVSIX>True</IncludeInVSIX>
 	  </Content>
 	</ItemGroup>
 	<ItemGroup>
