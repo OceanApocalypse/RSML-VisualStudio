@@ -1,0 +1,84 @@
+{
+	"name": "RSML",
+	"scopeName": "source.rsml",
+	"fileTypes": [
+		"rsea",
+		"rsml",
+		"decision"
+	],
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#special-actions"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#keywords-case-sensitive"
+		},
+		{
+			"include": "#keywords-case-insensitive"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.line.rsml rsml.comment.line",
+			"match": "^\\s*#.+$"
+		},
+		"strings": {
+			"name": "string.quoted.double.rsml rsml.strings",
+			"begin": "\"",
+			"end": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.rsml"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.rsml"
+				}
+			}
+		},
+		"special-actions": {
+			"begin": "@\\w+",
+			"beginCaptures": {
+				"0": {
+					"name": "keyword.other.rsml rsml.special.action.operator"
+				}
+			},
+			"end": "\\W.*$",
+			"endCaptures": {
+				"0": {
+					"name": "variable.parameter.rsml rsml.special.action.arg"
+				}
+			},
+			"name": "entity.name.class.rsml rsml.special.action"
+		},
+		"operators": {
+			"name": "keyword.operator.rsml rsml.operators",
+			"match": "->|!>|N>|==|!=|>=|<=|>|<"
+		},
+		"keywords-case-sensitive": {
+			"name": "keyword.other.rsml rsml.case-sensitive.keyword",
+			"match": "\\b(any|defined|undefined)\\b"
+		},
+		"keywords-case-insensitive": {
+			"name": "constant.language.rsml rsml.case-insensitive.keyword",
+			"match": "(?i)\\b(windows|linux|osx|debian|ubuntu|archlinux|freebsd|fedora|x64|x86|arm64|arm32|loongarch64)\\b(?-i)"
+		},
+		"numbers": {
+			"name": "constant.numeric.rsml rsml.numbers",
+			"match": "\\b\\d+\\b"
+		}
+	}
+}

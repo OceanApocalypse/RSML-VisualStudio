@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>14</LangVersion>
+
+		<RootNamespace>OceanApocalypseStudios.RSML.VisualStudio</RootNamespace>
+
+		<!-- VSIX settings -->
+		<VSSDKBuildToolsAutoSetup>true</VSSDKBuildToolsAutoSetup>
+		<GeneratePkgDefFile>true</GeneratePkgDefFile>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Grammars\rsml-language-configuration.tmLanguage.json" />
+	  <None Remove="languages.pkgdef" />
+	  <None Remove="LICENSE.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Grammars\rsml-language-configuration.tmLanguage.json" />
+	  <Content Include="languages.pkgdef" />
+	  <Content Include="LICENSE.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectCapability Include="CreateVsixContainer" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Microsoft.VisualStudio.Language.Intellisense" Version="17.14.249" CopyLocal="False" />
+		<PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" />
+		<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="18.5.40034" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Microsoft.CSharp" />
+		<Reference Include="PresentationCore" />
+		<Reference Include="PresentationFramework" />
+		<Reference Include="System.ComponentModel.Composition" />
+		<Reference Include="System.Configuration.Install" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="System.Design" />
+		<Reference Include="System.Management" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xaml" />
+	</ItemGroup>
+	<ProjectExtensions><VisualStudio><UserProperties grammars_4rsml-language-configuration_1tmlanguage_1json__JsonSchema="https://json.schemastore.org/tmlanguage.json" /></VisualStudio></ProjectExtensions>
+</Project>

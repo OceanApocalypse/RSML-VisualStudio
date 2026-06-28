@@ -1,0 +1,12 @@
+﻿[$RootKey$\TextMate\Repositories]
+"TextmateSample"="$PackageFolder$\Grammars"
+
+; Icons in Solution Explorer
+[$RootKey$\ShellFileAssociations\.rsml]
+"DefaultIconMoniker"="KnownMonikers.ModuleFile"
+
+[$RootKey$\ShellFileAssociations\.rsea]
+"DefaultIconMoniker"="KnownMonikers.ModuleFile"
+
+[$RootKey$\ShellFileAssociations\.decision]
+"DefaultIconMoniker"="KnownMonikers.ModuleFile"
