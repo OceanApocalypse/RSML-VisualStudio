@@ -7,7 +7,7 @@
 <h1 align="center">RSML Support for Visual Studio</h1>
 
 <div align="center">
-<a href="https://marketplace.visualstudio.com/items?itemName=OceanApocalypseStudios.oas-rsml-support-vs"><img alt="Static Badge" src="https://img.shields.io/badge/VS_Marketplace-0.0.1_(Preview)-b35ff2?style=for-the-badge" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=OceanApocalypse.oas-rsml-support-vs"><img alt="Static Badge" src="https://img.shields.io/badge/VS_Marketplace-0.0.1_(Preview)-b35ff2?style=for-the-badge" /></a>
 </div>
 
 
@@ -30,7 +30,7 @@
 
 <div align="center">
 
-**Copyright (c) 2025 OceanApocalypseStudios**
+**Copyright (c) 2025 OceanApocalypse**
 
 We :heart: open-source!
 

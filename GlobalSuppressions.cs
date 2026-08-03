@@ -5,5 +5,5 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~F:OceanApocalypseStudios.RSML.VisualStudio.Views.RsmlToolWindowCommand.CommandSet")]
-[assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~F:OceanApocalypseStudios.RSML.VisualStudio.Tools.RsmlToolWindowCommand.CommandSet")]
+[assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~F:OceanApocalypse.RSML.VisualStudio.Views.RsmlToolWindowCommand.CommandSet")]
+[assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~F:OceanApocalypse.RSML.VisualStudio.Tools.RsmlToolWindowCommand.CommandSet")]

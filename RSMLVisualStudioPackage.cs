@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.Shell;
 
 
-namespace OceanApocalypseStudios.RSML.VisualStudio
+namespace OceanApocalypse.RSML.VisualStudio
 {
 
 	/// <summary>

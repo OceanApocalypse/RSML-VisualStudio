@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<LangVersion>14</LangVersion>
 
-		<RootNamespace>OceanApocalypseStudios.RSML.VisualStudio</RootNamespace>
+		<RootNamespace>OceanApocalypse.RSML.VisualStudio</RootNamespace>
 
 		<!-- VSIX settings -->
 		<VSSDKBuildToolsAutoSetup>true</VSSDKBuildToolsAutoSetup>

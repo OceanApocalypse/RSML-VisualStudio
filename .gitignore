@@ -430,3 +430,6 @@ FodyWeavers.xsd
 
 # GIMP
 *.xcf
+
+# VSCode
+.vscode/*
