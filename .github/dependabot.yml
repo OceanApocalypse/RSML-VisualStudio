@@ -3,9 +3,6 @@ version: 2
 updates:
   # NuGet dependencies
   - package-ecosystem: "nuget"
-    directories:
-      - "/*"
-    exclude-paths:
     schedule:
       interval: "cron"
       cronjob: "0 7 * * WED"
